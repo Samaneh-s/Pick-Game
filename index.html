@@ -1,45 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link href="dice.png" rel="shortcut icon" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Pig Game</title>
+  <title>Pig Game - Start</title>
+  <link rel="stylesheet" href="start.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <main>
-    <section class="player player--0 player--active">
-      <h2 class="name" id="name--0">Player 1</h2>
-      <p class="score" id="score--0">0</p>
-      <div class="current">
-        <p class="current-label">Current</p>
-        <p class="current-score" id="current--0">0</p>
-      </div>
-    </section>
-    <section class="player player--1">
-      <h2 class="name" id="name--1">Player 2</h2>
-      <p class="score" id="score--1">0</p>
-      <div class="current">
-        <p class="current-label">Current</p>
-        <p class="current-score" id="current--1">0</p>
-      </div>
-    </section>
 
-    <img src="dice-5.png" alt="Playing dice" class="dice" />
-    <button class="btn btn--new"> New game</button>
-    <div class="buttons">
-      <button class="btn btn--roll">ROLL</button>
-      <button class="btn btn--hold">HOLD</button>
-    </div>
+
+  <div class="container">
+    <img class="dice" src="dice.png" alt="Dice">
+
+    <h1>Pig Game</h1>
+
+    <p>
+      Collect points, roll the dice, but remember…<br>
+      If the number 1 comes up, all your current points will be erased!<br> So don't be greedy and hit the hold button
+      😁🎲
+    </p>
+
+    <button class="start-btn" onclick="location.href='index.html'">
+      Start Game
+    </button>
+  </div>
 
 
 
-  </main>
-  <script src="script.js"></script>
 </body>
 
 </html>
